@@ -1,0 +1,5 @@
+{
+  "singleQuite": true,
+  "trailingComma": "all",
+  "arrowParens": "always"
+}
