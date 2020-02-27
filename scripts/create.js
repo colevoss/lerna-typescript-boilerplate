@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 
-const fse = require('fs-extra');
-const path = require('path');
+const fse = require("fs-extra");
+const path = require("path");
 
 const newPackageName = process.argv[2];
 
-const PACKAGES_PATH = path.resolve('packages');
-const BOILERPLATE_PATH = path.resolve(PACKAGES_PATH, 'boilerplate');
+const PACKAGES_PATH = path.resolve("packages");
+const BOILERPLATE_PATH = path.resolve("boilerplate");
 const NEW_PACKAGE_PATH = path.resolve(PACKAGES_PATH, newPackageName);
-const NEW_PACKAGE_JSON_PATH = path.resolve(NEW_PACKAGE_PATH, 'package.json');
+const NEW_PACKAGE_JSON_PATH = path.resolve(NEW_PACKAGE_PATH, "package.json");
 
 // Copy bolierplate to new package directory
 fse.copySync(BOILERPLATE_PATH, NEW_PACKAGE_PATH);
